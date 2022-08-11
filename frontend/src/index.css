@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+a{
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/*--------------END of CSS RESET--------------*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: auto;
+  /* background-color: white; */
+  opacity: 0.8;
+  /* z-index: 24; */
+}
+
+#title {
+  height: auto;
+  padding: 20px;
+  background-color: white;
+  font-size: 80px;
+  text-align: center;
+}
+
+.header nav > .link {
+  margin: 10px 0;
+}
+.header nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  font-size: 30px;
+  border-bottom: solid 1px black;
+  border-top: solid 1px black;
+}
+
+.App {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+.containerOfPaintings {
+  margin-top: 300px;
+}
+
+@media screen and (max-width: 628px){
+  .containerOfPaintings {
+    margin-top: 470px;
+  }  
+}
+
+.paintings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.paintings div {
+  margin-bottom: 150px;
+}
+
+.paintings div button {
+  width: 80px;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+
+img {
+  width: 400px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 250px;
+  padding: 0 20px;
+}
+
+.details > p, .details > img {
+  margin-bottom: 20px;
+}
+
+.details > img {
+  width: 80%;
+}
+
+.details button {
+  width: 200px;
+  height: 30px;
+  border: solid 1px black;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 80%;
+  text-align: justify;
+}
+
+.adminForm {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+
+form {
+  margin-top: 40px;
+}
+
+label {
+  padding: 10px;
+}
+
+input, textarea {
+  border: solid 1px black;
+  height: 30px;
+  font-size: 25px;
+  padding: 10px;
+}
+
+input[type='file'] {
+  font-size: 18px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.search {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+}
+
+.search > form > button {
+  width: 50px;
+  height: 28px;
+  font-size: 15px;
+  margin-left: 10px;
+  border: solid 1px black;
+}
+
+#admin {
+  height: auto;
+}
+
+.itemToDelete {
+  margin: 20px 0 20px;
+}
+
+.itemToDelete > button {
+  border: solid 1px black;
+  width: 100px;
+}
